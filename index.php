@@ -55,13 +55,12 @@ $id     = $_GET['id'];
 
 // ===== 自定义 Server 处理逻辑 =====
 $CUSTOM_SERVERS = [
-//    'servername' => [
+//    'example' => [
 //        'api' => 'https://example.com/api.php',  // 自定义 API 地址
 //        'support_types' => ['song', 'playlist'], // 支持的 type 类型
 //        'direct_return' => true,                  // 是否直接返回响应（不二次格式化）
 //        'timeout' => 20,                          // 请求超时时间（秒）。Vercel 免费计划默认超时 10s，建议设为 8 秒
 //    ]
-];
 
 if (isset($CUSTOM_SERVERS[$server])) {
     $config = $CUSTOM_SERVERS[$server];
@@ -133,7 +132,7 @@ if (AUTH) {
 }
 
 // 注意 Linux 大小写敏感
-include __DIR__ . '/src/Meting.php';
+include __DIR__ . '/src/meting.php';
 use Metowolf\Meting;
 
 $api = new Meting($server);

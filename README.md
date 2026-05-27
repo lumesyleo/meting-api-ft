@@ -45,3 +45,11 @@ PHP 5.4+ and BCMath, Curl, OpenSSL extension installed.
 ## License
 
 MIT
+
+## Update
+
+0.1.1
+- 修复大小写问题
+
+0.1.0
+- Clone 并增加自定义服务器字段
